@@ -9,7 +9,7 @@ const userReducer = (state = INITIAL_STATE, action) => {
     case UserTypes.CHANGE_COMPONENT:
       return {
         ...state,
-        iconrender: false,
+        iconrender: action.payload,
       };
     default:
       return state;

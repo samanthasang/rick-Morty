@@ -8,8 +8,8 @@ const CardList = ({ monsters }) => {
   const dispatch = useDispatch();
   useEffect(() => {
     console.log(monsters);
-    monsters.Length !== 0 && dispatch(ChangeComponent())
-  })
+    monsters.Length !== 0 && dispatch(ChangeComponent(false))
+  },[monsters])
   return (
 
     
